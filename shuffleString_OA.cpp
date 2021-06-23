@@ -7,12 +7,15 @@ class Solution {
 
 	public:
 		string restoreString(string s, vector<int>& indices) {
+			// Create a map to store the index with each element in the string
 			map<int, char> tmp;
 			int length = s.length();
-			string retVal;
+			string retVal; // a temporary string that will be returned as the new string
 			for(int i = 0; i < length; i++)
-				tmp.insert(pair<int, char>(indices[i], s[i]));			
+				// maps upon insertion sort the indices with the characters
+				tmp.insert(pair<int, char>(indices[i], s[i]));
 			for (int i = 0; i < length; i++)
+				// store the new formatted string in the temporary string 
 				retVal += tmp[i];
 
 			return retVal;
