@@ -62,3 +62,14 @@ target = 7
 
 L = twoSums(A, target)
 print(L)
+
+
+# Anagrams
+string = "kuwait"
+str2 = "wuaitk"
+res = ''.join(sorted(string))
+res2 = ''.join(sorted(str2))
+if res==res2:
+    print('Anagrams')
+else:
+    print('Not anagrams')
