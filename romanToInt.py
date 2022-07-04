@@ -24,7 +24,6 @@ class Solution:
         flag = 0
         skip = False
         length = len(list_of_chars)
-        print(length)
         for l in list_of_chars:
 
             if flag == 1 and skip == True:
@@ -61,8 +60,6 @@ class Solution:
                     sum += dict['XC']
                     flag = 1
                     skip = True
-                 #   continue
-                #flag = 0
 
             if flag == 0 or (i == length):
                 sum += dict[l]
